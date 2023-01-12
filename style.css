@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: auto;
+}
+body{
+    background: #0d9aff77;
+}
+#header{
+    text-align: center;
+    color: white;
+    background: transparent
+}
+#header h1{
+   padding-top: 100px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    width: 35vw;
+    height: 10vh;
+    margin-top: 5vh;
+}
+#btnAdd, #btnEdit{
+    width: 10vw;
+    height: 100%;
+    border: 0;
+    font-size: 1rem;
+    border-radius: 5px;
+    background: #70D786;
+    color: #ffffff;
+    font-weight: bolder;
+}
+#itemList{
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    color: #4c83ca;
+    font-weight: bolder;
+    padding: 20px;
+    width: 100%;
+    background: #7FF4B6;
+    border-radius: 5px;
+}
+#itemList::placeholder{
+    color: #4c83ca;
+}
+.btn:hover{
+    background: #4c83ca;
+}
+
+@media only screen and (max-width: 1024px) {
+    .item{
+        width: 40vw;
+    }
+    #btnAdd, #btnEdit{
+        width: 15vw;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .item{
+        width: 60vw;
+    }
+    #btnAdd, #btnEdit{
+        width: 20vw;
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    html{
+        font-size: 15px;
+    }
+    .item{
+        width: 70vw;
+    }
+    #btnAdd, #btnEdit{
+        width: 25vw;
+    }
+  }
+  @media only screen and (max-width: 375px) {
+    html{
+        font-size: 13px;
+    }
+    .item{
+        width: 78vw;
+    }
+    #btnAdd, #btnEdit{
+        width: 35vw;
+    }
+  }
